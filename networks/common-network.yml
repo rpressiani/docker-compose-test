@@ -1,0 +1,4 @@
+networks:
+  app-network:
+    name: my_shared_app_network
+    driver: bridge
