@@ -1,0 +1,7 @@
+services:
+  web:
+    image: busybox
+    command: sh -c "echo 'Web service started. Waiting for requests...'; sleep infinity"
+    container_name: web_service_container
+    networks:
+      - app-network
