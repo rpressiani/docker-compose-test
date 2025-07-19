@@ -1,3 +1,6 @@
+include:
+  - ./networks/common-network.yml
+
 services:
   # Any additional services specific to this main compose file
   # or overrides for included services can go here.
@@ -7,8 +10,3 @@ services:
     command: sh -c "while true; do echo 'Main app logging...'; sleep 5; done"
     networks:
       - app-network
-
-networks:
-  app-network:
-    name: my_shared_app_network
-    driver: bridge
