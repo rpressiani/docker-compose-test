@@ -1,5 +1,6 @@
 include:
   - ./networks/common-network.yml
+  - ./services/web.yml
 
 services:
   # Any additional services specific to this main compose file
