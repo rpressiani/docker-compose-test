@@ -1,0 +1,9 @@
+services:
+  # Any additional services specific to this main compose file
+  # or overrides for included services can go here.
+  # For this example, we'll just rely on the included services.
+  main-app-logger:
+    image: busybox
+    command: sh -c "while true; do echo 'Main app logging...'; sleep 5; done"
+    networks:
+      - app-network
